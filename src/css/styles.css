@@ -1,25 +1,106 @@
-/**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
-*/
-@import url('./reset.css');
-@import url('./vite-promo.css');
-@import url('./header.css');
-
-:root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+.container {
+  font-family: Montserrat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60vh;
+  margin: 0;
   font-size: 16px;
+  color: #2E2F42;
+}
+
+.feedback-form {
+  max-width: 400px;
+  width: 100%;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.label-form,
+.message-form {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.label-form label,
+.message-form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.label-form input,
+.message-form textarea {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  margin-top: 8px;
+  font-style: normal;
+}
+
+.btn {
+  background-color: #4E75FF;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+.back {
+  background-color: #ccc;
+}
+
+.nav-list {
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
   line-height: 24px;
-  font-weight: 400;
+  letter-spacing: 0.64px;
+}
 
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
+.nav-link,
+.link {
+  text-decoration: none;
+  color: black;
+}
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+.gallery-link {
+  cursor: pointer;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  list-style: none;
+  justify-content: center;
+
+  gap: 24px;
+  margin-left: 156px;
+  margin-top: 24px;
+  margin-right: 156px;
+}
+
+.gallery-image {
+  width: 360px;
+  height: 200px;
+}
+
+.gallery-item {
+  transition: transform 0.5s ease;
+}
+
+.gallery-item:hover {
+  transform: scale(1.1);
 }
