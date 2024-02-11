@@ -1,8 +1,4 @@
-// import SimpleLightbox from 'simplelightbox';
-
-// import SimpleLightbox from 'simplelightbox/dist/simple-lightbox.esm';
-
-new SimpleLightbox('.gallery a');
+// new SimpleLightbox('.gallery a');
 
 const images = [
   {
@@ -86,6 +82,9 @@ const galleryHtml = images
 
 gallery.innerHTML = galleryHtml;
 
+import SimpleLightbox from 'simplelightbox';
+import 'simplelightbox/dist/simple-lightbox.min.css';
+
 // Инициализация SimpleLightbox + плюшки
 const lightbox = new SimpleLightbox('.gallery a', {
   overlay: true,
@@ -97,10 +96,3 @@ const lightbox = new SimpleLightbox('.gallery a', {
   captionsData: 'alt',
   captionDelay: 250,
 });
-
-// Доброго здоровья Юлия :-) не вышло подключить методом который указан в ТЗ (дублирую ниже, нашёл альтернативу в мануале по библиотеке ) если Вы не против. Код работает.
-
-// Описаний в документації
-// import SimpleLightbox from "simplelightbox";
-// Додатковий імпорт стилів
-// import "simplelightbox/dist/simple-lightbox.min.css";
