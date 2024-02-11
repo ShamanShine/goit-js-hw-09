@@ -1,5 +1,3 @@
-// new SimpleLightbox('.gallery a');
-
 const images = [
   {
     preview:
