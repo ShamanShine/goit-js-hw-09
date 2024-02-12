@@ -1,3 +1,7 @@
+import SimpleLightbox from './node_modules/simplelightbox';
+
+import '/node_modules/simplelightbox/dist/simple-lightbox.min.css';
+
 const images = [
   {
     preview:
@@ -79,9 +83,6 @@ const galleryHtml = images
   .join('');
 
 gallery.innerHTML = galleryHtml;
-
-import SimpleLightbox from 'simplelightbox';
-import 'simplelightbox/dist/simple-lightbox.min.css';
 
 // Инициализация SimpleLightbox + плюшки
 const lightbox = new SimpleLightbox('.gallery a', {
